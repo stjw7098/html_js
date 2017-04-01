@@ -299,10 +299,10 @@ span {
 
 .header .nav ul.hot > li > ul, .header .nav ul.type > li > ul {
   display: none;
+  position: relative;
 }
 
 .header .nav ul.hot > li > ul > li, .header .nav ul.type > li > ul > li {
-  position: relative;
   /* 某种商品hover出来的ul */
   /* 某种商品hover出来的ul */
 }
@@ -448,201 +448,93 @@ span {
   background: #B9363D;
 }
 
-.banner {
-  width: 100%;
-  height: 550px;
-  background: url("../img/banner1.jpg") no-repeat;
-  cursor: pointer;
+.footer {
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #eee;
+  padding-top: 10px;
 }
 
-.main {
-  padding-top: 30px;
-  background-color: #f6f6f6;
+.footer .sec1 {
+  background: #f5f5f5;
+  border-bottom: 1px solid #ddd;
 }
 
-.main .wrap {
-  background-color: #fff;
+.footer .sec1 .contact {
+  width: 230px;
+  float: left;
+  border-right: 1px solid #ddd;
 }
 
-.main .news {
-  float: right;
-  margin-right: 14px;
+.footer .sec1 .info {
+  float: left;
 }
 
-.main .news li {
-  list-style: square;
+.footer .sec1 ul {
+  border-left: 1px solid #fff;
 }
 
-.main .news li a {
-  color: #777;
+.footer .sec1 li {
+  padding: 20px 40px;
+  float: left;
+}
+
+.footer .sec1 li h4 {
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.footer .sec1 li a {
+  color: #999;
   font-size: 14px;
+  margin-top: 2px;
 }
 
-.main .news li a.active {
-  color: red;
+.footer .sec1 li a:hover {
+  text-decoration: underline;
+  color: #c60;
 }
 
-.main .news h4 {
-  margin-top: 10px;
-}
-
-.main .news h4 span {
-  margin-left: 8px;
-  color: #ddd;
-}
-
-.main .news img {
-  display: block;
-  margin-top: 10px;
-}
-
-.main .pinpai {
-  float: left;
-}
-
-.main .pinpai ul {
-  width: 974px;
-  border-bottom: 1px solid #DFDFDF;
-}
-
-.main .pinpai ul li:nth-child(7n) a {
-  border-right: 1px solid #DFDFDF;
-}
-
-.main .pinpai ul li {
-  float: left;
+.footer .sec2 {
+  background: #f8f8f8;
   text-align: center;
 }
 
-.main .pinpai ul i {
+.footer .sec2 .wrap {
+  background: #f8f8f8;
+}
+
+.footer .sec2 .address {
+  padding-top: 20px;
+}
+
+.footer .sec2 p {
+  color: #999;
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+.footer .sec2 p s {
+  font-size: 20px;
+  color: #c00;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer .sec2 .img {
+  margin-top: 24px;
+  padding-bottom: 24px;
+}
+
+.footer .sec2 a {
   display: inline-block;
-  height: 50px;
+  padding: 0 10px;
+  color: #777;
+  font-size: 12px;
+  border-right: 1px solid #ddd;
 }
 
-.main .pinpai ul a {
-  display: block;
-  width: 138px;
-  height: 64px;
-  padding-top: 6px;
-  border: 1px solid #DFDFDF;
-  border-right: none;
-  border-bottom: none;
-}
-
-.main .pinpai ul a:hover {
-  transition: background 0.6s;
-  background: #e6e6e6;
-}
-
-.main .pinpai ul a.nike i {
-  width: 60px;
-  background: url("../img/pinpai.png") no-repeat 0 -186px;
-}
-
-.main .pinpai ul a.adi i {
-  width: 90px;
-  background: url("../img/pinpai.png") no-repeat -310px -490px;
-}
-
-.main .pinpai ul a.sanye i {
-  width: 44px;
-  height: 52px;
-  background: url("../img/pinpai.png") no-repeat -1020px -340px;
-}
-
-.main .pinpai ul a.neo i {
-  height: 54px;
-  width: 35px;
-  background: url("../img/pinpai.png") no-repeat -1177px -337px;
-}
-
-.main .pinpai ul a.nb i {
-  width: 72px;
-  background: url("../img/pinpai.png") no-repeat -830px -185px;
-}
-
-.main .pinpai ul a.kw i {
-  height: 54px;
-  width: 56px;
-  background: url("../img/pinpai.png") no-repeat 0px -264px;
-}
-
-.main .pinpai ul a.ksq i {
-  width: 72px;
-  background: url("../img/pinpai.png") no-repeat -832px -268px;
-}
-
-.main .pinpai ul a.pm i {
-  width: 63px;
-  height: 56px;
-  background: url("../img/pinpai.png") no-repeat -1167px -182px;
-}
-
-.main .pinpai ul a.rb i {
-  width: 86px;
-  background: url("../img/pinpai.png") no-repeat -992px -18px;
-}
-
-.main .pinpai ul a.as i {
-  width: 80px;
-  background: url("../img/pinpai.png") no-repeat -660px -343px;
-}
-
-.main .pinpai ul a.dc i {
-  height: 54px;
-  width: 50px;
-  background: url("../img/pinpai.png") no-repeat -842px -487px;
-}
-
-.main .pinpai ul a.um i {
-  width: 76px;
-  height: 52px;
-  background: url("../img/pinpai.png") no-repeat -1150px -490px;
-}
-
-.main .pinpai ul a.anta i {
-  width: 45px;
-  background: url("../img/pinpai.png") no-repeat -500px -186px;
-}
-
-.main .pinpai ul a.ln i {
-  width: 56px;
-  background: url("../img/pinpai.png") no-repeat -316px -192px;
-}
-
-.main .pinpai ul a.fs i {
-  width: 50px;
-  background: url("../img/pinpai.png") no-repeat -150px -268px;
-}
-
-.main .pinpai ul a.nba i {
-  width: 68px;
-  background: url("../img/pinpai.png") no-repeat -1000px -495px;
-}
-
-.main .pinpai ul a.tlz i {
-  height: 58px;
-  width: 106px;
-  background: url("../img/pinpai.png") no-repeat -812px -340px;
-}
-
-.main .pinpai ul a.ldw i {
-  width: 68px;
-  background: url("../img/pinpai.png") no-repeat -485px -108px;
-}
-
-.main .pinpai ul a.nikechild i {
-  width: 66px;
-  background: url("../img/pinpai.png") no-repeat -148px -490px;
-}
-
-.main .pinpai ul a.adichild i {
-  width: 80px;
-  background: url("../img/pinpai.png") no-repeat -310px -490px;
-}
-
-.main .pinpai ul a.dsn i {
-  height: 54px;
-  width: 54px;
-  background: url("../img/pinpai.png") no-repeat 0 -488px;
+.footer .sec2 a:hover {
+  color: red;
+  text-decoration: underline;
 }

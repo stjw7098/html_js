@@ -1,0 +1,431 @@
+// 轮播图
+.banner{
+	width: 100%;
+	height: 550px;
+	background:url('../img/banner1.jpg') no-repeat;
+	cursor:pointer;
+}
+
+.main{
+	padding-top:30px;
+	background-color: #f6f6f6;
+	.wrap{
+		background-color: #fff;
+	}
+	.news{
+		float: right;
+		margin-right:14px;
+		li{
+			list-style:square;
+			a{
+				color:#777;
+				font-size:14px;
+				&.active{
+					color:red;
+				}
+			}
+
+		}
+		h4{
+			margin-top:10px;
+			span{
+				margin-left:8px;
+				color:#ddd;
+			}
+		}
+		img{
+			display:block;
+			margin-top:10px;
+		}
+	}
+	.pinpai{
+		float: left;
+		ul{
+			width: 974px;
+			border-bottom: 1px solid #DFDFDF;
+			li:nth-child(7n) a{
+				border-right: 1px solid #DFDFDF;
+			}
+			li{
+				float: left;
+				text-align:center;
+
+			}
+			i{
+				display:inline-block;
+				height: 50px;
+			}
+			a{
+				display:block;
+				width: 138px;
+				height: 64px;
+				padding-top: 6px;
+				border: 1px solid #DFDFDF;
+				border-right:none;
+				border-bottom:none;
+				
+				&:hover{
+					transition:background 0.6s;
+					background: #e6e6e6;
+				}
+				&.nike{
+					i{
+						width: 60px;
+						background: url('../img/pinpai.png') no-repeat 0 -186px;
+					}
+					
+				}
+				&.adi{
+					i{
+						width: 90px;
+						background: url('../img/pinpai.png') no-repeat -310px -490px;
+					}
+				}
+				&.sanye{
+					i{
+						width: 44px;
+						height: 52px;
+						background: url('../img/pinpai.png') no-repeat -1020px -340px;
+					}
+				}
+				&.neo{
+					i{
+						height: 54px;
+						width: 35px;
+						background: url('../img/pinpai.png') no-repeat -1177px -337px;
+					}
+				}
+				&.nb{
+					i{
+						width: 72px;
+						background: url('../img/pinpai.png') no-repeat -830px -185px;
+					}
+				}
+				&.kw{
+					i{
+						height: 54px;
+						width: 56px;
+						background: url('../img/pinpai.png') no-repeat 0px -264px;
+					}
+				}
+				&.ksq{
+					i{
+						width: 72px;
+						background: url('../img/pinpai.png') no-repeat -832px -268px;
+					}
+				}
+				&.pm{
+					i{
+						width: 63px;
+						height: 56px;
+						background: url('../img/pinpai.png') no-repeat -1167px -182px;
+					}
+				}
+				&.rb{
+					i{
+						width: 86px;
+						background: url('../img/pinpai.png') no-repeat -992px -18px;
+					}
+				}
+				&.as{
+					i{
+						width: 80px;
+						background: url('../img/pinpai.png') no-repeat -660px -343px;
+					}
+				}
+
+				&.dc{
+					i{
+						height: 54px;
+						width: 50px;
+						background: url('../img/pinpai.png') no-repeat -842px -487px;
+					}
+				}
+				&.um{
+					i{
+						width: 76px;
+						height: 52px;
+						background: url('../img/pinpai.png') no-repeat -1150px -490px;
+					}
+				}
+				&.anta{
+					i{
+						width: 45px;
+						background: url('../img/pinpai.png') no-repeat -500px -186px;
+					}
+				}
+				&.ln{
+					i{
+						width: 56px;
+						background: url('../img/pinpai.png') no-repeat -316px -192px;
+					}
+				}
+				&.fs{
+					i{
+						width: 50px;
+						background: url('../img/pinpai.png') no-repeat -150px -268px;
+					}
+				}
+				&.nba{
+					i{
+						width: 68px;
+						background: url('../img/pinpai.png') no-repeat -1000px -495px;
+					}
+				}
+				&.tlz{
+					i{
+						height: 58px;
+						width: 106px;
+						background: url('../img/pinpai.png') no-repeat -812px -340px;
+					}
+				}
+				&.ldw{
+					i{
+						width: 68px;
+						background: url('../img/pinpai.png') no-repeat -485px -108px;
+					}
+				}
+				&.nikechild{
+					i{
+						width: 66px;
+						background: url('../img/pinpai.png') no-repeat -148px -490px;
+					}
+				}
+				&.adichild{
+					i{
+						width: 80px;
+						background: url('../img/pinpai.png') no-repeat -310px -490px;
+					}
+				}
+				&.dsn{
+					i{
+						height: 54px;
+						width: 54px;
+						background: url('../img/pinpai.png') no-repeat 0 -488px;
+					}
+				}
+			}
+		}
+	}
+
+	.zhuanqu{
+		background: #f6f6f6;
+		overflow:hidden;
+		padding-top:10px;
+		li{
+			float: left;
+			margin-right:11px;
+			width: 230px;
+			text-align:center;
+			&:last-child{
+				margin-right:0;
+			}
+		}
+		a{
+			display:inline-block;
+			width: 230px;
+			height: 290px;
+			box-sizing:border-box;
+			
+			&:hover{
+				border: 3px solid #cc0000;
+				transition:all 0.2s;
+				opacity:1;
+				img{
+					margin-top:-3px;
+				}
+			}
+		}
+		img{
+			position:relative;
+			top:3px;
+			width: 224px;
+			height: 284px;
+		}
+	}		
+
+	.floor{
+		height: 500px;
+		background-color: red;
+	}	
+	
+	// <!-- 页面底部公用的品牌模块 -->
+	.pp{
+		background-color: #f6f6f6;
+		overflow:hidden;
+		.pinpai2{
+		background: #fff;
+		margin-top:30px;
+		margin-bottom:20px;
+		float: left;
+		ul{
+			padding:0 1px;
+			border-top: 1px solid #DFDFDF;
+			border-right: 1px solid #DFDFDF;
+			// li:nth-child(7n) a{
+			// 	border-right: 1px solid #DFDFDF;
+			// }
+			li{
+				float: left;
+				text-align:center;
+
+			}
+			i{
+				display:inline-block;
+				height: 50px;
+			}
+			a{
+				display:block;
+				width: 118px;
+				height: 64px;
+				padding-top: 6px;
+				border: 1px solid #DFDFDF;
+				border-right:none;
+				border-top:none;
+				&:hover{
+					transition:background 0.6s;
+					background: #e6e6e6;
+				}
+				&.nike{
+					i{
+						width: 60px;
+						background: url('../img/pinpai.png') no-repeat 0 -186px;
+					}
+					
+				}
+				&.adi{
+					i{
+						width: 90px;
+						background: url('../img/pinpai.png') no-repeat -310px -490px;
+					}
+				}
+				&.sanye{
+					i{
+						width: 44px;
+						height: 52px;
+						background: url('../img/pinpai.png') no-repeat -1020px -340px;
+					}
+				}
+				&.neo{
+					i{
+						height: 54px;
+						width: 35px;
+						background: url('../img/pinpai.png') no-repeat -1177px -337px;
+					}
+				}
+				&.nb{
+					i{
+						width: 72px;
+						background: url('../img/pinpai.png') no-repeat -830px -185px;
+					}
+				}
+				&.kw{
+					i{
+						height: 54px;
+						width: 56px;
+						background: url('../img/pinpai.png') no-repeat 0px -264px;
+					}
+				}
+				&.ksq{
+					i{
+						width: 72px;
+						background: url('../img/pinpai.png') no-repeat -832px -268px;
+					}
+				}
+				&.pm{
+					i{
+						width: 63px;
+						height: 56px;
+						background: url('../img/pinpai.png') no-repeat -1167px -182px;
+					}
+				}
+				&.rb{
+					i{
+						width: 86px;
+						background: url('../img/pinpai.png') no-repeat -992px -18px;
+					}
+				}
+				&.as{
+					i{
+						width: 80px;
+						background: url('../img/pinpai.png') no-repeat -660px -343px;
+					}
+				}
+
+				&.dc{
+					i{
+						height: 54px;
+						width: 50px;
+						background: url('../img/pinpai.png') no-repeat -842px -487px;
+					}
+				}
+				&.um{
+					i{
+						width: 76px;
+						height: 52px;
+						background: url('../img/pinpai.png') no-repeat -1150px -490px;
+					}
+				}
+				&.anta{
+					i{
+						width: 45px;
+						background: url('../img/pinpai.png') no-repeat -500px -186px;
+					}
+				}
+				&.ln{
+					i{
+						width: 56px;
+						background: url('../img/pinpai.png') no-repeat -316px -192px;
+					}
+				}
+				&.fs{
+					i{
+						width: 50px;
+						background: url('../img/pinpai.png') no-repeat -150px -268px;
+					}
+				}
+				&.nba{
+					i{
+						width: 68px;
+						background: url('../img/pinpai.png') no-repeat -1000px -495px;
+					}
+				}
+				&.tlz{
+					i{
+						height: 58px;
+						width: 106px;
+						background: url('../img/pinpai.png') no-repeat -812px -340px;
+					}
+				}
+				&.ldw{
+					i{
+						width: 68px;
+						background: url('../img/pinpai.png') no-repeat -485px -108px;
+					}
+				}
+				&.nikechild{
+					i{
+						width: 66px;
+						background: url('../img/pinpai.png') no-repeat -148px -490px;
+					}
+				}
+				&.adichild{
+					i{
+						width: 80px;
+						background: url('../img/pinpai.png') no-repeat -310px -490px;
+					}
+				}
+				&.dsn{
+					i{
+						height: 54px;
+						width: 54px;
+						background: url('../img/pinpai.png') no-repeat 0 -488px;
+					}
+				}
+			}
+		}
+	}
+	}
+	
+		
+}

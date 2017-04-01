@@ -263,9 +263,9 @@ span{
 				}
 				&>ul{
 					display:none;
-					
+					position:relative;
 					&>li{
-						position:relative;
+						
 						&>a{
 							display:inline-block;
 							
@@ -416,213 +416,82 @@ span{
 		}
 	}
 }
-// 轮播图
-.banner{
-	width: 100%;
-	height: 550px;
-	background:url('../img/banner1.jpg') no-repeat;
-	cursor:pointer;
-}
 
-.main{
-	padding-top:30px;
-	background-color: #f6f6f6;
-	.wrap{
-		background-color: #fff;
-	}
-	.news{
-		float: right;
-		margin-right:14px;
-		li{
-			list-style:square;
-			a{
-				color:#777;
-				font-size:14px;
-				&.active{
-					color:red;
-				}
-			}
 
-		}
-		h4{
-			margin-top:10px;
-			span{
-				margin-left:8px;
-				color:#ddd;
+.footer{
+	border-top: 1px solid #ddd;
+	border-right:1px solid #eee;
+	padding-top:10px;
+		.sec1{
+			background: #f5f5f5;
+			border-bottom:1px solid #ddd;
+			.contact{
+				width: 230px;
+				float: left;
+				border-right:1px solid #ddd;
 			}
-		}
-		img{
-			display:block;
-			margin-top:10px;
-		}
-	}
-	.pinpai{
-		float: left;
-		ul{
-			width: 974px;
-			border-bottom: 1px solid #DFDFDF;
-			li:nth-child(7n) a{
-				border-right: 1px solid #DFDFDF;
+			.info{
+				float: left;
+			}
+			ul{
+				border-left: 1px solid #fff;
 			}
 			li{
+				padding: 20px 40px;
 				float: left;
-				text-align:center;
-
-			}
-			i{
-				display:inline-block;
-				height: 50px;
-			}
-			a{
-				display:block;
-				width: 138px;
-				height: 64px;
-				padding-top: 6px;
-				border: 1px solid #DFDFDF;
-				border-right:none;
-				border-bottom:none;
+				h4{
+					font-size:16px;
+					margin-top:30px;
+					margin-bottom:10px;
+				}
 				
-				&:hover{
-					transition:background 0.6s;
-					background: #e6e6e6;
-				}
-				&.nike{
-					i{
-						width: 60px;
-						background: url('../img/pinpai.png') no-repeat 0 -186px;
-					}
-					
-				}
-				&.adi{
-					i{
-						width: 90px;
-						background: url('../img/pinpai.png') no-repeat -310px -490px;
-					}
-				}
-				&.sanye{
-					i{
-						width: 44px;
-						height: 52px;
-						background: url('../img/pinpai.png') no-repeat -1020px -340px;
-					}
-				}
-				&.neo{
-					i{
-						height: 54px;
-						width: 35px;
-						background: url('../img/pinpai.png') no-repeat -1177px -337px;
-					}
-				}
-				&.nb{
-					i{
-						width: 72px;
-						background: url('../img/pinpai.png') no-repeat -830px -185px;
-					}
-				}
-				&.kw{
-					i{
-						height: 54px;
-						width: 56px;
-						background: url('../img/pinpai.png') no-repeat 0px -264px;
-					}
-				}
-				&.ksq{
-					i{
-						width: 72px;
-						background: url('../img/pinpai.png') no-repeat -832px -268px;
-					}
-				}
-				&.pm{
-					i{
-						width: 63px;
-						height: 56px;
-						background: url('../img/pinpai.png') no-repeat -1167px -182px;
-					}
-				}
-				&.rb{
-					i{
-						width: 86px;
-						background: url('../img/pinpai.png') no-repeat -992px -18px;
-					}
-				}
-				&.as{
-					i{
-						width: 80px;
-						background: url('../img/pinpai.png') no-repeat -660px -343px;
-					}
-				}
+				a{
+					color:#999;
+					font-size:14px;
+					margin-top:2px;
 
-				&.dc{
-					i{
-						height: 54px;
-						width: 50px;
-						background: url('../img/pinpai.png') no-repeat -842px -487px;
-					}
-				}
-				&.um{
-					i{
-						width: 76px;
-						height: 52px;
-						background: url('../img/pinpai.png') no-repeat -1150px -490px;
-					}
-				}
-				&.anta{
-					i{
-						width: 45px;
-						background: url('../img/pinpai.png') no-repeat -500px -186px;
-					}
-				}
-				&.ln{
-					i{
-						width: 56px;
-						background: url('../img/pinpai.png') no-repeat -316px -192px;
-					}
-				}
-				&.fs{
-					i{
-						width: 50px;
-						background: url('../img/pinpai.png') no-repeat -150px -268px;
-					}
-				}
-				&.nba{
-					i{
-						width: 68px;
-						background: url('../img/pinpai.png') no-repeat -1000px -495px;
-					}
-				}
-				&.tlz{
-					i{
-						height: 58px;
-						width: 106px;
-						background: url('../img/pinpai.png') no-repeat -812px -340px;
-					}
-				}
-				&.ldw{
-					i{
-						width: 68px;
-						background: url('../img/pinpai.png') no-repeat -485px -108px;
-					}
-				}
-				&.nikechild{
-					i{
-						width: 66px;
-						background: url('../img/pinpai.png') no-repeat -148px -490px;
-					}
-				}
-				&.adichild{
-					i{
-						width: 80px;
-						background: url('../img/pinpai.png') no-repeat -310px -490px;
-					}
-				}
-				&.dsn{
-					i{
-						height: 54px;
-						width: 54px;
-						background: url('../img/pinpai.png') no-repeat 0 -488px;
+					&:hover{
+						text-decoration:underline;
+						color:#c60;
 					}
 				}
 			}
 		}
-	}
+		.sec2{
+			background: #f8f8f8;
+			text-align:center;
+
+			.wrap{
+				background: #f8f8f8;
+			}
+			.address{
+				padding-top:20px;
+			}
+			p{
+				color:#999;
+				margin-top:4px;
+				font-size:12px;
+				s{
+					font-size: 20px;
+					color: #c00;
+					font-weight: 700;
+					text-decoration:none;
+				}
+			}
+			.img{
+				margin-top:24px;
+				padding-bottom:24px;
+			}
+			a{
+				display:inline-block;
+				padding:0 10px;
+				color:#777;
+				font-size:12px;
+				border-right:1px solid #ddd;
+				&:hover{
+					color:red;
+					text-decoration:underline;
+				}
+			}
+		}
 }

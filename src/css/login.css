@@ -1,0 +1,115 @@
+body, p, h1, h2, h3, h4 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  display: inline-block;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main .wrap {
+  border-bottom: 2px solid #ce3c3b;
+}
+
+.main .left {
+  float: left;
+}
+
+.main .left img {
+  width: 380px;
+  height: 380px;
+  margin-top: 80px;
+}
+
+.main .right {
+  float: left;
+  margin-top: 80px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+  width: 400px;
+  height: 320px;
+  background: #fafafa;
+  padding: 40px 185px;
+}
+
+.main .right input {
+  margin-left: 10px;
+}
+
+.main .right label {
+  display: inline-block;
+  width: 50px;
+  color: #666;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.main .right #user, .main .right #pwd {
+  width: 230px;
+  height: 30px;
+}
+
+.main .right #code {
+  width: 70px;
+  height: 30px;
+}
+
+.main .right .result {
+  height: 26px;
+  line-height: 26px;
+  padding: 4px;
+  color: #333;
+  letter-spacing: 6px;
+  margin-left: 20px;
+  background: #ddd;
+  vertical-align: bottom;
+}
+
+.main .right .log {
+  width: 89px;
+  height: 38px;
+  background: url("../html/img/xb.png") no-repeat 0 -198px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+.main .right a {
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 20px;
+  color: red;
+}
+
+.main .right a:hover {
+  text-decoration: underline;
+}
+
+.main .right p {
+  margin-top: 20px;
+  margin-left: 20px;
+}
