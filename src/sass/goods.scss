@@ -1,0 +1,64 @@
+.main{
+	.goods_info{
+		padding: 20px;
+		overflow:hidden;
+		margin: 0 auto;
+		width: 970px;
+		.left{
+			float: left;
+			width: 430px;
+			height: 430px;
+			background: red;
+			border: 1px solid #eee;
+			img{
+				width: 430px;
+				height: 430px;
+			}
+		}
+		.right{
+			float: left;
+			width: 506px;
+			height: 430px;
+			margin:10px;
+			h4{
+				border-bottom: 1px dashed #ddd;
+				line-height:40px;
+				a{
+					float: right;
+					color:#c60;
+				}
+			}
+			.content{
+				border-bottom: 1px dashed #ddd;
+				width: 100%;
+				color:#666;
+				p{
+					margin:4px 0;
+					height: 25px;
+					line-height: 25px;
+				}
+				.price{
+					color:#d00;
+					font-size:18px;
+				}
+				
+
+			}
+			.cuxiao{
+				margin-top:10px;
+				span{
+					padding-left:4px;
+				}
+				& span:first-child{
+					width: 80px;
+					background: #fe6464;
+				}
+				& span:last-child{
+					width: 400px;
+					margin-left:4px;
+					background: #ff9090;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,88 @@
+.main .list {
+  margin-top: 30px;
+}
+
+.main .list header {
+  overflow: hidden;
+  border: 1px solid #dbdbdb;
+  border-top: 4px solid #999;
+  background: #f7f7f7;
+  line-height: 40px;
+  height: 40px;
+}
+
+.main .list header p {
+  float: right;
+  margin-right: 50px;
+}
+
+.main .list header p span {
+  color: red;
+}
+
+.main .list header div {
+  float: left;
+}
+
+.main .list header div a {
+  margin-left: 70px;
+  color: #f60;
+}
+
+.main .list ul {
+  overflow: hidden;
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 40px;
+}
+
+.main .list li {
+  float: left;
+  width: 220px;
+  height: 300px;
+  border: 1px solid #eee;
+  margin: 20px;
+  padding: 10px;
+}
+
+.main .list li a {
+  display: inline-block;
+}
+
+.main .list li img {
+  margin: 5px;
+  display: block;
+  margin-bottom: 1px;
+  width: 210px;
+  height: 210px;
+}
+
+.main .list li p {
+  width: 215px;
+  height: 22px;
+  margin: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+.main .list li p.price {
+  color: red;
+}
+
+.main .list li s {
+  margin-left: 10px;
+  color: #999;
+}
+
+.main .list li div {
+  transition: all 0.7s;
+}
+
+.main .list li:hover div {
+  transform: opacity(1);
+  background: #eee;
+}

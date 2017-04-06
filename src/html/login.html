@@ -22,19 +22,22 @@
 			<div class="right">
 				<h4>会员登录<span>Login</span></h4>
 				<div class="login">
-					<form action="#">
+					<!-- <form action="../api/userlist.php" method="POST"> -->
+					<form>
 						<label for="user">用户名:</label>
-						<input type="text" id="user" name="username"><br>
+						<input type="text" id="user" name="username">
+						<span class="userspan"></span><br>
 						<label for="pwd">密码:</label>
-						<input type="password" id="pwd" name="password"><br>
+						<input type="password" id="pwd" name="password">
+						<span class="pwdspan"></span><br>
 						<label for="code">验证码:</label>
-						<input type="text" id="code"><span class="result">5478</span><a href="#" class="replace">换个图片</a><br>
+						<input type="text" id="code"><span class="result"></span><a href="#" class="replace">换个图片</a><span class="repspan"></span><br>
 
 						<input type="submit" value="登录" class="log"><a href="#">忘记密码?</a>
 
 
 					</form>
-					<p>还不是名鞋库会员?<a href="#" class="register">马上注册为会员</a></p>
+					<p>还不是名鞋库会员?<a href="http://localhost/myshoes/src/html/register.html" class="register">马上注册为会员</a></p>
 				</div>
 				
 			</div>

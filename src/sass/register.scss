@@ -1,0 +1,117 @@
+.main{
+	width: 880px;
+	height: 400px;
+	margin:100px auto;
+	border: 1px solid #eee;
+	box-shadow: 1px 1px 15px 0px #ddd;
+	.head{
+		padding-left: 10px;
+		height: 30px;
+		line-height: 30px;
+		background: #f8f8f8;
+		border-bottom: 1px solid #eee;
+		color:#888;
+		font-weight: bold;
+	}
+	.nowLog{
+		display:inline-block;
+		margin-top:10px;
+		width: 91px;
+		height: 30px;
+		line-height:30px;
+		background: #faedd6;
+		color:#c66;
+		cursor:pointer;
+		background: url('../html/img/logbg.png');
+		text-align:center;
+
+	}
+	form{
+		float: left;
+		width: 480px;
+		height: 230px;
+		font-size:14px;
+		padding:80px 70px;
+		font-size:16px;
+		& .nowLog{
+			margin:60px 0 0 190px;
+			color:red;
+		}
+		label{
+			text-align: right;
+			display:inline-block;
+			width: 80px;
+			line-height:30px;	
+		}
+		input{
+			margin-top:14px;
+			margin-left:10px;
+			width: 230px;
+			height: 30px;
+		}
+		.register{
+		  width: 89px;
+		  height: 38px;
+		  background: url("../html/img/xb.png") no-repeat 0 -198px;
+		  border: none;
+		  cursor: pointer;
+		  font-size: 16px;
+		  margin-left: 94px;
+		  margin-top: 20px;
+		  color:white;
+		}
+		.cbrule{
+			width: 20px;
+			height: 20px;
+			margin: 4px 6px 0 2px;
+			vertical-align: bottom;
+		}
+
+		.rule{
+			color:blue;
+		}
+		p{
+			// display:inline-block;
+			line-height:20px;
+			padding-left:30px;
+			margin-top:25px;
+		}
+
+		.rigSuc{
+			height: 40px;
+			line-height:40px;
+			font-size:24px;
+			color:#f44336;
+			text-align:center;
+		}
+
+		span{
+			height: 36px;
+			line-height:36px;
+			margin-top:14px;
+			color:red;
+			vertical-align:bottom;
+		}		
+	}
+
+	.formRight{
+		float: left;
+		height: 300px;
+		width: 250px;
+		border-left: 1px dashed #ccc;
+		margin-top:45px;
+		text-align:center;
+		& p:first-child{
+			margin-top:40px;
+			color:#333;
+			font-size:14px;
+			font-weight:bold;
+		}
+		
+		img{
+			margin-top:30px;
+		}
+	}
+}
+
+

@@ -55,6 +55,19 @@ span {
   text-align: center;
 }
 
+.header .loginbar ul li.firstLi, .header .loginbar ul li.secondLi {
+  width: 200px;
+  font-size: 12px;
+}
+
+.header .loginbar ul li.firstLi a, .header .loginbar ul li.secondLi a {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0 4px;
+  color: #c00;
+}
+
 .header .loginbar ul li.myShoes div, .header .loginbar ul li.phoneShoes div {
   display: none;
   width: 164px;
@@ -446,6 +459,249 @@ span {
   line-height: 34px;
   border-right: none;
   background: #B9363D;
+}
+
+.main {
+  /* 页面底部公用的品牌模块 */
+  /* 页面右边公用的选择模块 */
+}
+
+.main .pp {
+  background-color: #f6f6f6;
+  overflow: hidden;
+}
+
+.main .pp .pinpai2 {
+  background: #fff;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  float: left;
+}
+
+.main .pp .pinpai2 ul {
+  padding: 0 1px;
+  border-top: 1px solid #DFDFDF;
+  border-right: 1px solid #DFDFDF;
+}
+
+.main .pp .pinpai2 ul li {
+  float: left;
+  text-align: center;
+}
+
+.main .pp .pinpai2 ul i {
+  display: inline-block;
+  height: 50px;
+}
+
+.main .pp .pinpai2 ul a {
+  display: block;
+  width: 118px;
+  height: 64px;
+  padding-top: 6px;
+  border: 1px solid #DFDFDF;
+  border-right: none;
+  border-top: none;
+}
+
+.main .pp .pinpai2 ul a:hover {
+  transition: background 0.6s;
+  background: #e6e6e6;
+}
+
+.main .pp .pinpai2 ul a.nike i {
+  width: 60px;
+  background: url("../img/pinpai.png") no-repeat 0 -186px;
+}
+
+.main .pp .pinpai2 ul a.adi i {
+  width: 90px;
+  background: url("../img/pinpai.png") no-repeat -310px -490px;
+}
+
+.main .pp .pinpai2 ul a.sanye i {
+  width: 44px;
+  height: 52px;
+  background: url("../img/pinpai.png") no-repeat -1020px -340px;
+}
+
+.main .pp .pinpai2 ul a.neo i {
+  height: 54px;
+  width: 35px;
+  background: url("../img/pinpai.png") no-repeat -1177px -337px;
+}
+
+.main .pp .pinpai2 ul a.nb i {
+  width: 72px;
+  background: url("../img/pinpai.png") no-repeat -830px -185px;
+}
+
+.main .pp .pinpai2 ul a.kw i {
+  height: 54px;
+  width: 56px;
+  background: url("../img/pinpai.png") no-repeat 0px -264px;
+}
+
+.main .pp .pinpai2 ul a.ksq i {
+  width: 72px;
+  background: url("../img/pinpai.png") no-repeat -832px -268px;
+}
+
+.main .pp .pinpai2 ul a.pm i {
+  width: 63px;
+  height: 56px;
+  background: url("../img/pinpai.png") no-repeat -1167px -182px;
+}
+
+.main .pp .pinpai2 ul a.rb i {
+  width: 86px;
+  background: url("../img/pinpai.png") no-repeat -992px -18px;
+}
+
+.main .pp .pinpai2 ul a.as i {
+  width: 80px;
+  background: url("../img/pinpai.png") no-repeat -660px -343px;
+}
+
+.main .pp .pinpai2 ul a.dc i {
+  height: 54px;
+  width: 50px;
+  background: url("../img/pinpai.png") no-repeat -842px -487px;
+}
+
+.main .pp .pinpai2 ul a.um i {
+  width: 76px;
+  height: 52px;
+  background: url("../img/pinpai.png") no-repeat -1150px -490px;
+}
+
+.main .pp .pinpai2 ul a.anta i {
+  width: 45px;
+  background: url("../img/pinpai.png") no-repeat -500px -186px;
+}
+
+.main .pp .pinpai2 ul a.ln i {
+  width: 56px;
+  background: url("../img/pinpai.png") no-repeat -316px -192px;
+}
+
+.main .pp .pinpai2 ul a.fs i {
+  width: 50px;
+  background: url("../img/pinpai.png") no-repeat -150px -268px;
+}
+
+.main .pp .pinpai2 ul a.nba i {
+  width: 68px;
+  background: url("../img/pinpai.png") no-repeat -1000px -495px;
+}
+
+.main .pp .pinpai2 ul a.tlz i {
+  height: 58px;
+  width: 106px;
+  background: url("../img/pinpai.png") no-repeat -812px -340px;
+}
+
+.main .pp .pinpai2 ul a.ldw i {
+  width: 68px;
+  background: url("../img/pinpai.png") no-repeat -485px -108px;
+}
+
+.main .pp .pinpai2 ul a.nikechild i {
+  width: 66px;
+  background: url("../img/pinpai.png") no-repeat -148px -490px;
+}
+
+.main .pp .pinpai2 ul a.adichild i {
+  width: 80px;
+  background: url("../img/pinpai.png") no-repeat -310px -490px;
+}
+
+.main .pp .pinpai2 ul a.dsn i {
+  height: 54px;
+  width: 54px;
+  background: url("../img/pinpai.png") no-repeat 0 -488px;
+}
+
+.main .fixRight {
+  width: 10px;
+  background: #7a6e6e;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+.main .fixRight .box {
+  width: 35px;
+  position: absolute;
+  top: 260px;
+  right: 0;
+}
+
+.main .fixRight div {
+  width: 35px;
+  height: 35px;
+  background-color: #7a6e6e;
+  font-size: 14px;
+  border-radius: 4px;
+  border-bottom: 1px solid white;
+  position: relative;
+  color: white;
+}
+
+.main .fixRight div.user i {
+  background: #7a6e6e url("../img/fixrightbg.png") no-repeat -88px -174px;
+}
+
+.main .fixRight div.shopCar i {
+  background: #7a6e6e url("../img/fixrightbg.png") no-repeat -50px 0px;
+}
+
+.main .fixRight div.care i {
+  background: #7a6e6e url("../img/fixrightbg.png") no-repeat -48px -50px;
+}
+
+.main .fixRight div.history i {
+  background: #7a6e6e url("../img/fixrightbg.png") no-repeat -48px -100px;
+}
+
+.main .fixRight div.top i {
+  background: #7a6e6e url("../img/fixrightbg.png") no-repeat -48px -250px;
+}
+
+.main .fixRight div:hover span {
+  transform: translate(-70px);
+  background: #c81623;
+}
+
+.main .fixRight div:hover i {
+  background-color: #c81623;
+}
+
+.main .fixRight div i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 5;
+  width: 35px;
+  height: 35px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main .fixRight div span {
+  position: absolute;
+  padding-left: 10px;
+  left: 0px;
+  top: 0;
+  z-index: 0;
+  width: 70px;
+  height: 35px;
+  line-height: 35px;
+  background-color: #7a6e6e;
+  transition: transform 0.5s;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .footer {

@@ -1,0 +1,72 @@
+.main .goods_info {
+  padding: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 970px;
+}
+
+.main .goods_info .left {
+  float: left;
+  width: 430px;
+  height: 430px;
+  background: red;
+  border: 1px solid #eee;
+}
+
+.main .goods_info .left img {
+  width: 430px;
+  height: 430px;
+}
+
+.main .goods_info .right {
+  float: left;
+  width: 506px;
+  height: 430px;
+  margin: 10px;
+}
+
+.main .goods_info .right h4 {
+  border-bottom: 1px dashed #ddd;
+  line-height: 40px;
+}
+
+.main .goods_info .right h4 a {
+  float: right;
+  color: #c60;
+}
+
+.main .goods_info .right .content {
+  border-bottom: 1px dashed #ddd;
+  width: 100%;
+  color: #666;
+}
+
+.main .goods_info .right .content p {
+  margin: 4px 0;
+  height: 25px;
+  line-height: 25px;
+}
+
+.main .goods_info .right .content .price {
+  color: #d00;
+  font-size: 18px;
+}
+
+.main .goods_info .right .cuxiao {
+  margin-top: 10px;
+}
+
+.main .goods_info .right .cuxiao span {
+  padding-left: 4px;
+}
+
+.main .goods_info .right .cuxiao span:first-child {
+  width: 80px;
+  background: #fe6464;
+}
+
+.main .goods_info .right .cuxiao span:last-child {
+  width: 400px;
+  margin-left: 4px;
+  background: #ff9090;
+}
