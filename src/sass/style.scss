@@ -271,6 +271,7 @@ span{
 				}
 				/* 商品分类的ul */
 				&:hover>ul{
+					z-index:10;
 					display:block;
 				}
 				&>ul{
@@ -617,6 +618,7 @@ span{
 		right:0;
 		top:0;
 		height: 100%;
+		z-index:20;
 		.box{
 			width: 35px;
 			
@@ -624,7 +626,8 @@ span{
 			top:260px;
 			right:0;
 		}
-		div{
+		a{
+			display:block;
 			width: 35px;
 			height: 35px;
 			background-color: #7a6e6e;

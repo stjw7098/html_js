@@ -1,25 +1,75 @@
 .main{
+	.wrap{
+		width: 100%;
+	}
 	.goods_info{
 		padding: 20px;
 		overflow:hidden;
 		margin: 0 auto;
-		width: 970px;
+		// width: 970px;
+		padding-left:230px;
+		position:relative;
+		.cloneImg{
+			position: absolute;
+			left:230px;
+			top:20px;
+			width: 430px;
+			height: 430px;
+		}		
+		.smallImgContent{
+			overflow:hidden;
+			width: 430px;
+
+			i{
+				display:inline-block;
+				float: left;
+				cursor:pointer;
+				margin:11px 4px;
+				vertical-align:bottom;
+				img{
+					width: 22px;
+					height: 32px;
+					display:block;
+					margin:0;
+				}
+			}
+			li{
+				width: 58px;
+				height: 58px;
+				float: left;
+				margin:0 6px;
+				
+			}
+			.active{
+				background:#e53e41;
+			}
+			img{
+				margin:2px;
+				width: 54px;
+				height: 54px;
+				
+			}
+		}
 		.left{
 			float: left;
 			width: 430px;
 			height: 430px;
 			background: red;
 			border: 1px solid #eee;
+			
 			img{
 				width: 430px;
 				height: 430px;
 			}
+			
 		}
 		.right{
 			float: left;
 			width: 506px;
 			height: 430px;
 			margin:10px;
+			margin-top:0;
+			border-bottom: 1px dashed #ddd;
 			h4{
 				border-bottom: 1px dashed #ddd;
 				line-height:40px;
@@ -33,7 +83,7 @@
 				width: 100%;
 				color:#666;
 				p{
-					margin:4px 0;
+					margin:6px 0;
 					height: 25px;
 					line-height: 25px;
 				}
@@ -41,22 +91,72 @@
 					color:#d00;
 					font-size:18px;
 				}
+				.color{
+					width: 25px;
+					height: 25px;
+					margin-left:4px;
+					vertical-align:bottom;
+					&:hover{
+						border: 2px solid red;
+						box-sizing: border-box;
+					}
+				}
 				
 
 			}
 			.cuxiao{
-				margin-top:10px;
+				border-bottom: 1px dashed #ddd;
+				padding: 14px 0;
 				span{
 					padding-left:4px;
 				}
 				& span:first-child{
-					width: 80px;
+					width: 70px;
 					background: #fe6464;
 				}
 				& span:last-child{
 					width: 400px;
 					margin-left:4px;
 					background: #ff9090;
+				}
+			}
+			.option{
+				margin-top:30px;
+				.buy{
+					display:inline-block;
+					width: 137px;
+					height: 44px;
+					background: url('../img/shopcarbg.png') no-repeat -1px -447px;
+					&:hover{
+						background: url('../img/shopcarbg.png') no-repeat -1px -498px;	
+					}
+				}
+				.shop_car{
+					display:inline-block;
+					width: 171px;
+					height: 44px;
+					margin-left:50px;
+					background: url("../img/shopcarbg.png") no-repeat -1px -124px;
+					&:hover{
+						background: url('../img/shopcarbg.png') no-repeat -1px -394px;	
+					}
+				}
+			}
+			.service{
+				margin-top:20px;
+				color:#333;
+				height: 25px;
+				line-height:25px;
+				word-spacing: 6px;
+				i{
+					color:#999;
+					display:inline-block;
+					height: 25px;
+					margin-right: 6px;
+					font-style: normal;
+				}
+				img{
+					vertical-align:bottom;
 				}
 			}
 		}

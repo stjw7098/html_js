@@ -1,8 +1,58 @@
+.main .wrap {
+  width: 100%;
+}
+
 .main .goods_info {
   padding: 20px;
   overflow: hidden;
   margin: 0 auto;
-  width: 970px;
+  padding-left: 230px;
+  position: relative;
+}
+
+.main .goods_info .cloneImg {
+  position: absolute;
+  left: 230px;
+  top: 20px;
+  width: 430px;
+  height: 430px;
+}
+
+.main .goods_info .smallImgContent {
+  overflow: hidden;
+  width: 430px;
+}
+
+.main .goods_info .smallImgContent i {
+  display: inline-block;
+  float: left;
+  cursor: pointer;
+  margin: 11px 4px;
+  vertical-align: bottom;
+}
+
+.main .goods_info .smallImgContent i img {
+  width: 22px;
+  height: 32px;
+  display: block;
+  margin: 0;
+}
+
+.main .goods_info .smallImgContent li {
+  width: 58px;
+  height: 58px;
+  float: left;
+  margin: 0 6px;
+}
+
+.main .goods_info .smallImgContent .active {
+  background: #e53e41;
+}
+
+.main .goods_info .smallImgContent img {
+  margin: 2px;
+  width: 54px;
+  height: 54px;
 }
 
 .main .goods_info .left {
@@ -23,6 +73,8 @@
   width: 506px;
   height: 430px;
   margin: 10px;
+  margin-top: 0;
+  border-bottom: 1px dashed #ddd;
 }
 
 .main .goods_info .right h4 {
@@ -42,7 +94,7 @@
 }
 
 .main .goods_info .right .content p {
-  margin: 4px 0;
+  margin: 6px 0;
   height: 25px;
   line-height: 25px;
 }
@@ -52,8 +104,21 @@
   font-size: 18px;
 }
 
+.main .goods_info .right .content .color {
+  width: 25px;
+  height: 25px;
+  margin-left: 4px;
+  vertical-align: bottom;
+}
+
+.main .goods_info .right .content .color:hover {
+  border: 2px solid red;
+  box-sizing: border-box;
+}
+
 .main .goods_info .right .cuxiao {
-  margin-top: 10px;
+  border-bottom: 1px dashed #ddd;
+  padding: 14px 0;
 }
 
 .main .goods_info .right .cuxiao span {
@@ -61,7 +126,7 @@
 }
 
 .main .goods_info .right .cuxiao span:first-child {
-  width: 80px;
+  width: 70px;
   background: #fe6464;
 }
 
@@ -69,4 +134,51 @@
   width: 400px;
   margin-left: 4px;
   background: #ff9090;
+}
+
+.main .goods_info .right .option {
+  margin-top: 30px;
+}
+
+.main .goods_info .right .option .buy {
+  display: inline-block;
+  width: 137px;
+  height: 44px;
+  background: url("../img/shopcarbg.png") no-repeat -1px -447px;
+}
+
+.main .goods_info .right .option .buy:hover {
+  background: url("../img/shopcarbg.png") no-repeat -1px -498px;
+}
+
+.main .goods_info .right .option .shop_car {
+  display: inline-block;
+  width: 171px;
+  height: 44px;
+  margin-left: 50px;
+  background: url("../img/shopcarbg.png") no-repeat -1px -124px;
+}
+
+.main .goods_info .right .option .shop_car:hover {
+  background: url("../img/shopcarbg.png") no-repeat -1px -394px;
+}
+
+.main .goods_info .right .service {
+  margin-top: 20px;
+  color: #333;
+  height: 25px;
+  line-height: 25px;
+  word-spacing: 6px;
+}
+
+.main .goods_info .right .service i {
+  color: #999;
+  display: inline-block;
+  height: 25px;
+  margin-right: 6px;
+  font-style: normal;
+}
+
+.main .goods_info .right .service img {
+  vertical-align: bottom;
 }

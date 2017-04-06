@@ -2,8 +2,35 @@
 .banner{
 	width: 100%;
 	height: 550px;
-	background:url('../img/banner1.jpg') no-repeat;
 	cursor:pointer;
+	position:relative;
+	ul{
+		position:relative;
+		width: 100%;
+		height: 100%;
+	}
+	li{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	p{
+		position:absolute;
+		bottom: 30px;
+		height: 36px;
+		cursor:default;
+		padding-top:20px;
+		span{
+			width: 16px;
+			height: 16px;
+			margin:0 8px;
+			background: #ddd;
+			border-radius: 8px;
+		}
+	}
+	.active{
+		background: red;
+	}
 }
 
 .main{
@@ -225,20 +252,17 @@
 			display:inline-block;
 			width: 230px;
 			height: 290px;
-			box-sizing:border-box;
+			// box-sizing:border-box;
 			
 			&:hover{
-				border: 3px solid #cc0000;
-				transition:all 0.2s;
+				background: #cc0000;
+				transition:all 1s;
 				opacity:1;
-				img{
-					margin-top:-3px;
-				}
+				
 			}
 		}
 		img{
-			position:relative;
-			top:3px;
+			margin: 3px;
 			width: 224px;
 			height: 284px;
 		}
@@ -423,8 +447,8 @@
 	} */
 }
 	
-	/* 楼层列表 */
-	.floor{
+/* 楼层列表 */
+.floor{
 		// padding-top:10px;
 		background: #f6f6f6;
 		&>div{
@@ -570,7 +594,5 @@
 				}
 			}
 		}
-	
-	
 		
 }

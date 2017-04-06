@@ -2,8 +2,40 @@
 .banner {
   width: 100%;
   height: 550px;
-  background: url("../img/banner1.jpg") no-repeat;
   cursor: pointer;
+  position: relative;
+}
+
+.banner ul {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.banner li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.banner p {
+  position: absolute;
+  bottom: 30px;
+  height: 36px;
+  cursor: default;
+  padding-top: 20px;
+}
+
+.banner p span {
+  width: 16px;
+  height: 16px;
+  margin: 0 8px;
+  background: #ddd;
+  border-radius: 8px;
+}
+
+.banner .active {
+  background: red;
 }
 
 .main {
@@ -395,22 +427,16 @@
   display: inline-block;
   width: 230px;
   height: 290px;
-  box-sizing: border-box;
 }
 
 .main .zhuanqu a:hover {
-  border: 3px solid #cc0000;
-  transition: all 0.2s;
+  background: #cc0000;
+  transition: all 1s;
   opacity: 1;
 }
 
-.main .zhuanqu a:hover img {
-  margin-top: -3px;
-}
-
 .main .zhuanqu img {
-  position: relative;
-  top: 3px;
+  margin: 3px;
   width: 224px;
   height: 284px;
 }

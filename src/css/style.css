@@ -307,6 +307,7 @@ span {
 }
 
 .header .nav ul.hot > li:hover > ul, .header .nav ul.type > li:hover > ul {
+  z-index: 10;
   display: block;
 }
 
@@ -629,6 +630,7 @@ span {
   right: 0;
   top: 0;
   height: 100%;
+  z-index: 20;
 }
 
 .main .fixRight .box {
@@ -638,7 +640,8 @@ span {
   right: 0;
 }
 
-.main .fixRight div {
+.main .fixRight a {
+  display: block;
   width: 35px;
   height: 35px;
   background-color: #7a6e6e;
@@ -649,36 +652,36 @@ span {
   color: white;
 }
 
-.main .fixRight div.user i {
+.main .fixRight a.user i {
   background: #7a6e6e url("../img/fixrightbg.png") no-repeat -88px -174px;
 }
 
-.main .fixRight div.shopCar i {
+.main .fixRight a.shopCar i {
   background: #7a6e6e url("../img/fixrightbg.png") no-repeat -50px 0px;
 }
 
-.main .fixRight div.care i {
+.main .fixRight a.care i {
   background: #7a6e6e url("../img/fixrightbg.png") no-repeat -48px -50px;
 }
 
-.main .fixRight div.history i {
+.main .fixRight a.history i {
   background: #7a6e6e url("../img/fixrightbg.png") no-repeat -48px -100px;
 }
 
-.main .fixRight div.top i {
+.main .fixRight a.top i {
   background: #7a6e6e url("../img/fixrightbg.png") no-repeat -48px -250px;
 }
 
-.main .fixRight div:hover span {
+.main .fixRight a:hover span {
   transform: translate(-70px);
   background: #c81623;
 }
 
-.main .fixRight div:hover i {
+.main .fixRight a:hover i {
   background-color: #c81623;
 }
 
-.main .fixRight div i {
+.main .fixRight a i {
   position: absolute;
   right: 0;
   top: 0;
@@ -689,7 +692,7 @@ span {
   cursor: pointer;
 }
 
-.main .fixRight div span {
+.main .fixRight a span {
   position: absolute;
   padding-left: 10px;
   left: 0px;
