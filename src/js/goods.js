@@ -1,10 +1,12 @@
 requirejs(['config'],function(){
-	requirejs(['jquery','head','loginStatus','gdszoom'],function($,head,loginStatus,gdszoom){
+	requirejs(['jquery','head','loginStatus','gdszoom','fixRight'],function($,head,loginStatus,gdszoom,fixRight){
 		$('.header').load('../html/head.html',function(){
 			loginStatus();
 			head();
 		});
-		$('.fr').load('../html/fixRight.html');
+		$('.fr').load('../html/fixRight.html',function(){
+			fixRight();
+		});
 		// $('.ppbox').load('../html/pingpai.html');
 		$('.footer').load('../html/footer.html');
 
@@ -28,6 +30,8 @@ requirejs(['config'],function(){
 						<p>销售价  :   <span class="price">￥${data[0].price}.00</span>  (${count}折)  立省:￥${jiesheng}.00</p>
 						<p>颜色  :   <span class="color" style="background-color:${data[0].color}"></span></p>
 						<p>尺码  :   ${data[0].size}</p>
+						<p>数量  :   <input class="num" type="number" value="1" min="1"></p>
+
 						<p>运费  :   名鞋库会员满399包邮(不包括货到付款)</p>
 					</div>
 					<p class="cuxiao"><span>促销信息</span><span>满减促销: 满299减10 满599减20 满999减50   限购3件</span></p>
@@ -65,8 +69,8 @@ requirejs(['config'],function(){
 					var currentImgUrl=$(this).children('img').attr('src');
 					$('.left').children('img').attr('src',currentImgUrl);
 
-					//调用放大镜插件
-					$('.left').gdszoom({width:500,height:430,gap:6});
+					// //调用放大镜插件
+					// $('.left').gdszoom({width:500,height:430,gap:6});
 
 				});
 
@@ -79,22 +83,24 @@ requirejs(['config'],function(){
 				$('.shop_car').click(function(e){
 					e.preventDefault();
 
-					
+					//获取购买商品数量
+					var count=$('.content .num').val();
+					console.log(count)
 
 					//获取本页面的商品id
 					var id=location.search.split('=')[1];
 
 					var username=getCookie('username');
-					console.log(username,id)
 					if(username){
 						// 飞入购物车效果 
 						showCarAnimate();
 
 						//为该用户给后台添加该商品
 						$.ajax({
-							url:'../api/insertShopCar.php?user='+username+'&id='+id,
+							url:'../api/insertShopCar.php?user='+username+'&id='+id+'&count='+count,
 							success:function(data){
-								console.log(data)
+								// console.log(data)
+								location.reload();
 							}
 						})
 					}else{

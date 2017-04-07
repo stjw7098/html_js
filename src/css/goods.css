@@ -99,6 +99,14 @@
   line-height: 25px;
 }
 
+.main .goods_info .right .content p input {
+  height: 25px;
+  width: 60px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  vertical-align: bottom;
+}
+
 .main .goods_info .right .content .price {
   color: #d00;
   font-size: 18px;
@@ -118,7 +126,7 @@
 
 .main .goods_info .right .cuxiao {
   border-bottom: 1px dashed #ddd;
-  padding: 14px 0;
+  padding: 4px 0;
 }
 
 .main .goods_info .right .cuxiao span {

@@ -9,6 +9,8 @@ requirejs(['config'],function(){
 
 		// var goodsId=location.search.split('=')[1];
 		var user=getCookie('username');
+
+		//从数据库获取用户购物车数据
 		$.ajax({
 			url:'../api/checkShopCar.php?user='+user,
 			dataType:'JSON',

@@ -611,20 +611,164 @@ span{
 	}
 
 	/* 页面右边公用的选择模块 */
+	
 	.fixRight{
-		width: 10px;
+		width: 280px;
 		background: #7a6e6e;
 		position:fixed;
-		right:0;
+		right:-270px;
 		top:0;
 		height: 100%;
-		z-index:20;
+		z-index:10;
+
+		.show{
+			right:0;
+		}
+		.cover{
+			position:absolute;
+			background: #7a6e6e;
+			height: 100%;
+			width: 100%;
+			position:absolute;
+			.footer{
+				width: 269px;
+				height: 50px;
+				position:absolute;
+				bottom:0;
+				right:0;
+				padding-top:0;
+				background: #eceaea;
+				.left{
+					float: left;
+					width: 150px;
+					padding-left:4px;
+					padding-top:4px;
+					font-size:14px;
+					span{
+						color:rgb(200, 22, 35);
+					}
+				}
+				.right{
+					float: left;
+					a{
+						display:inline-block;
+						width: 110px;
+						height: 35px;
+						background: rgb(200, 22, 35);
+						font-size:16px;
+						font-family:"微软雅黑";
+						color:white;
+						line-height:35px;
+						text-align:center;
+						margin-top:7px;
+					}
+				}
+			}
+			.content{
+				margin-left:10px;
+				width: 270px;
+				background: #eceaea;
+				height: 100%;
+				overflow-y:auto;
+				height: 750px;
+				/*定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸*/
+				&::-webkit-scrollbar{
+				    width: 8px;
+				    height: 8px;
+				    background-color: #f5f5f5;
+				}
+				/*定义滚动条的轨道，内阴影及圆角*/
+				&::-webkit-scrollbar-track{
+				    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+				    border-radius: 10px;
+				    background-color: #f5f5f5;
+				}
+				/*定义滑块，内阴影及圆角*/
+				&::-webkit-scrollbar-thumb{
+				    /*width: 10px;*/
+				    height: 20px;
+				    border-radius: 10px;
+				    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+				    background-color: #555;
+				}
+
+				.goods{
+					overflow:hidden;
+					background: #fff;
+					margin-bottom:10px;
+					height: 52px;
+					padding:10px 6px;
+					div{
+						float: left;
+					}
+					& div:first-child{
+						border: 1px solid #ddd;
+						display:inline-block;
+						width: 50px;
+						height: 50px;
+					}
+					& div:last-child{
+						margin-left:6px;
+						
+						
+						.name{
+							font-size:12px;
+							width: 190px;
+							height: 35px;
+							background: #fff;
+							color:#333;
+							overflow:hidden;
+							&:hover{
+								color:#c81623;
+							}
+						}
+						p{
+							height: 26px;
+							color:#c81623;
+							font-size:14px;
+							a{
+								width: 40px;
+								height: 30px;
+								display:inline-block;
+								background: #fff;
+								color:blue;
+								float: right;
+								&:hover{
+									text-decoration:underline;
+									color:#c81623;
+								}
+							}
+						}
+					}
+				} 
+				
+				img{
+					width: 50px;
+					height: 50px;
+				}
+			}
+			.head{
+				span{
+					width: 20px;
+					height: 20px;
+					margin:10px;
+					background: url('../img/fixrightbg.png') no-repeat;
+					vertical-align:bottom;
+					margin-right:20px;
+				}
+				padding-left:10px;
+				height: 40px;
+				line-height:40px;
+				color:#333;
+				
+			}
+		}
 		.box{
 			width: 35px;
-			
 			position:absolute;
 			top:260px;
-			right:0;
+			left:-34px;
+
 		}
 		a{
 			display:block;
@@ -633,9 +777,10 @@ span{
 			background-color: #7a6e6e;
 			font-size:14px;
 			border-radius:4px;
-			border-bottom:1px solid white;
+			margin-bottom:1px;
 			position:relative;
 			color:white;
+			// overflow:hidden;
 			&.user i{
 				background:#7a6e6e url('../img/fixrightbg.png') no-repeat -88px -174px;
 			}
@@ -655,8 +800,14 @@ span{
 				transform:translate(-70px);
 				background: #c81623;
 			}
-			&:hover i{
-				background-color: #c81623;
+			// &:hover i{
+			// 	background-color: #c81623;
+			// }
+			// &:hover{
+			// 	overflow:visible;
+			// }
+			.active{
+				background-color: #c81623!important;
 			}
 			
 			i{
@@ -674,7 +825,7 @@ span{
 				padding-left:10px;
 				left:0px;
 				top:0;
-				z-index:0;
+				// z-index:0;
 				width: 70px;
 				height: 35px;
 				line-height:35px;

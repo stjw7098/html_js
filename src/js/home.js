@@ -32,34 +32,34 @@ requirejs(['config'],function(){
 		$('.banner p').css('left',left-20);
 
 		//轮播定时器，显示动画
+		$lis.eq(0)
 		bannerAnimate();
 
 		var timer;
-		var i=1;
+		var index=1;
 		function bannerAnimate(){
 			
 			timer=setInterval(function(){
-				if(i===4){
-					i=0;
+				if(index===4){
+					index=0;
 				}
-				$('.banner p').children('span').eq(i).addClass('active').siblings('span').removeClass('active');
-				$lis.eq(i).fadeIn(1000).siblings('li').fadeOut(700);
-				i++;
+				$('.banner p').children('span').eq(index).addClass('active').siblings('span').removeClass('active');
+				$lis.eq(index).fadeIn(1000).siblings('li').fadeOut(700);
+				index++;
 			},3000)
 		}
 		
 
 		$('.banner').mouseenter(function(){
 			clearInterval(timer);
-			console.log('in')
 		}).mouseleave(function(){
-			console.log('out')
 			bannerAnimate();
 		})
 
+		//轮播图小圆点改变轮播图动画
 		$('.banner p').on('mouseenter','span',function(){
 			$(this).addClass('active').siblings('span').removeClass('active');
-			var index=$(this).index();
+			index=$(this).index();
 			$lis.eq(index).fadeIn(1000).siblings('li').fadeOut(700);
 		})
 		

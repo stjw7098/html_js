@@ -123,6 +123,9 @@
 
 			// 显示
 			function show(){
+				imgUrl = $smallImg.data('big') || $smallImg.attr('src');
+				$bigImg.attr('src',imgUrl);
+
 				$bigContainer.show();
 				$minZoom.show();
 
