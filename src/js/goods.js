@@ -15,6 +15,7 @@ requirejs(['config'],function(){
 		//通过ajax请求获取商品数据
 		$.ajax({
 			url:'../api/goods.php?id='+goodsId,
+			
 			dataType:'JSON',
 			success:function(data){
 				console.log(data);
@@ -69,12 +70,11 @@ requirejs(['config'],function(){
 					var currentImgUrl=$(this).children('img').attr('src');
 					$('.left').children('img').attr('src',currentImgUrl);
 
-					// //调用放大镜插件
-					// $('.left').gdszoom({width:500,height:430,gap:6});
+					
 
 				});
 
-
+				// //调用放大镜插件
 				$('.left').gdszoom({width:500,height:430,gap:6});
 
 				
@@ -100,13 +100,58 @@ requirejs(['config'],function(){
 							url:'../api/insertShopCar.php?user='+username+'&id='+id+'&count='+count,
 							success:function(data){
 								// console.log(data)
-								location.reload();
+
+								//添加完后更新数据
+								updateCar();
 							}
 						})
 					}else{
 						alert('很抱歉！请先登录再进行购买');
 					}
 				})
+
+				function updateCar(){
+					var user=getCookie('username');
+					$.ajax({
+						url:'http://localhost/myshoes/src/api/checkShopCar.php?user='+user,
+						dataType:'JSON',
+						success:function(data){
+							//更新前应该清空
+							$('.fixRight .cover .content .head').siblings('div').remove();
+							var $content=$('.fixRight .cover .content');
+
+							var total=0;
+							var num=0;
+							//生成所有商品的列表
+							for(var i=0;i<data.length;i++){
+								//计算商品数量
+								num+=parseInt(data[i].goods_count);
+								//计算商品总额
+								total+=parseInt(data[i].goods_count*data[i].price);
+								$('<div/>').addClass('goods').attr('data-id',data[i].goods_number).html(`
+									<div>
+										<a href="#"><img src="${data[i].url}"></a>
+									</div>
+									<div>
+										<a href="#" class="name">${data[i].name}</a>
+										<p>￥${data[i].price}.00    <span>&times;${data[i].goods_count}</span><a href="#">删除</a></p>
+									</div>
+									`).appendTo($content);
+							}
+
+
+							//更新前应该清空
+							$('.cover .footer').html('');
+							//商品购物车的底部结构
+							$('<div/>').addClass('left').html(`<p><span>${num}</span>件商品</p><p>共计:<span>￥${total}.00</span></p>`).appendTo('.cover .footer');
+							$('<div/>').addClass('right').html(`<a href="#">去购物车结算</a>`).appendTo('.cover .footer');
+
+							//更新head部分里面的购物车标签里的商品数量内容
+							$('.logo .shopCar .num').text(num);
+						}
+					})
+				}
+				
 
 
 				
@@ -124,6 +169,7 @@ requirejs(['config'],function(){
 
 					})
 				}
+
 
 			}
 		})

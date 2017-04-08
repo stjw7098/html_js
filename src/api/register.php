@@ -13,8 +13,7 @@
 	// // 查询数据库获取数据
 	$result = $conn->query($sql);
 
-	
-	echo $sql;
+
 
 	//使用查询结果集
 	// $row = $result->fetch_all(MYSQLI_ASSOC);

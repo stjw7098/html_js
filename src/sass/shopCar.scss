@@ -1,0 +1,157 @@
+.main {
+	h3{
+		padding: 4px 10px;
+	}
+	.lists_header{
+		overflow: hidden;
+		width: 100%;
+		height: 40px;
+		line-height: 40px;
+		background-color: #f3f3f3;
+		border: 1px solid #ddd;
+		input{
+			width: 20px;
+			height: 20px;
+			position:relative;
+			top:4px;
+		}
+
+		li{
+			float: left;
+		}
+		& li:nth-child(1){
+			margin-left: 30px;
+		}
+		& li:nth-child(2){
+			margin-left: 70px;
+		}
+		& li:nth-child(3){
+			margin-left: 475px;
+		}
+		& li:nth-child(4){
+			margin-left: 90px;
+		}
+		& li:nth-child(5){
+			margin-left: 90px;
+		}
+		& li:nth-child(6){
+			margin-left: 126px;
+		}
+	}
+	.left{
+		// float: left;
+		margin-left:500px;
+		display:inline-block;
+		width: 150px;
+		padding-left:4px;
+		padding-top:4px;
+		font-size:16px;
+		margin-bottom: 50px;
+		margin-top:20px;
+		span{
+			color:rgb(200, 22, 35);
+		}
+		
+	}
+	.right{
+		display:inline-block;
+		vertical-align:bottom;
+		margin-bottom: 50px;
+		a{
+			display:inline-block;
+			width: 110px;
+			height: 35px;
+			background: rgb(200, 22, 35);
+			font-size:20px;
+			font-family:"微软雅黑";
+			color:white;
+			line-height:35px;
+			text-align:center;
+			margin-top:7px;
+		}
+	}
+	.lists{
+		margin-top: 30px;
+		background: #eee;
+		overflow:hidden;
+		
+		img{
+			width: 80px;
+			height: 80px;
+			margin-left:10px;
+		}
+		li{
+			padding:20px;
+			overflow:hidden;
+			list-style-type: none;
+			height: 80px;
+			line-height:80px;
+			border-bottom: 1px solid #ddd;
+			.name{
+				width: 380px;
+				padding: 10px;
+				line-height:30px;
+				overflow:hidden;
+			}
+			.price{
+				margin-left:30px;
+				width: 100px;
+				overflow:hidden;
+			}
+			.num{
+				margin-left:5px;
+				width: 100px;
+				height: 20px;
+				line-height:20px;
+				text-align: center;
+				span{
+					border: 1px solid #ddd;
+					margin-top:30px;
+				}
+				& span:nth-child(1){
+					width: 20px;
+					height: 20px;	
+					cursor: pointer;	
+				}
+				& span:nth-child(2){
+					width: 40px;
+					height: 20px;
+				}
+				& span:nth-child(3){
+					width: 20px;
+					height: 20px;
+					cursor: pointer;
+				}
+			}
+			.total{
+				margin-left:40px;
+				width: 140px;
+				overflow:hidden;
+			}
+			a{
+				color:#4141cf;
+				margin-left:20px;
+				&:hover{
+					color:#e4393c;
+					text-decoration: underline;
+				}
+			}
+		}
+		input{
+			width: 20px;
+			height: 20px;
+			margin-top:30px;
+		}
+		li,div,a,input,img{
+			float: left;
+		}
+		.color{
+			width: 30px;
+			height: 30px;
+			border: 1px solid red;
+			position: relative;
+			top:12px;
+			left:6px;
+		}
+	}
+}

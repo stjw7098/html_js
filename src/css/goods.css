@@ -102,9 +102,10 @@
 .main .goods_info .right .content p input {
   height: 25px;
   width: 60px;
-  padding-left: 10px;
+  padding-left: 5px;
   box-sizing: border-box;
   vertical-align: bottom;
+  border-radius: 4px;
 }
 
 .main .goods_info .right .content .price {
