@@ -286,6 +286,7 @@ span {
   left: 0;
   top: 34px;
   display: none;
+  z-index: 30;
   background: url("../img/wx2.png") no-repeat;
 }
 

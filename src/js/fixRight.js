@@ -47,7 +47,7 @@ define(['jquery'],function(){
 						total+=parseInt(data[i].goods_count*data[i].price);
 						$('<div/>').addClass('goods').attr('data-id',data[i].goods_number).html(`
 							<div>
-								<a href="#"><img src="${data[i].url}"></a>
+								<a href="http://localhost/myshoes/src/html/goods.html?id=${data[i].goods_number}"><img src="${data[i].url}"></a>
 							</div>
 							<div>
 								<a href="http://localhost/myshoes/src/html/goods.html?id=${data[i].goods_number}" class="name">${data[i].name}</a>

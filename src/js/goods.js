@@ -36,7 +36,7 @@ requirejs(['config'],function(){
 						<p>运费  :   名鞋库会员满399包邮(不包括货到付款)</p>
 					</div>
 					<p class="cuxiao"><span>促销信息</span><span>满减促销: 满299减10 满599减20 满999减50   限购3件</span></p>
-					<div class="option"><a href="#" class="buy"></a><a href="#" class="shop_car"></a></div>
+					<div class="option"><a href="http://localhost/myshoes/src/html/shopCar.html" class="buy"></a><a href="#" class="shop_car"></a></div>
 					<p class="service"><i>名鞋库保障:</i>
 					    		<img src="../img/zheng.png">  正品认证  
 					    		<img src="../img/tui.png">  自由退货  
